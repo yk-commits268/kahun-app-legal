@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プライバシーポリシー - 花粉アラート</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+      line-height: 1.8;
+      color: #334155;
+      background: #F9FAFB;
+      padding: 24px 16px;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    h1 { font-size: 22px; font-weight: 700; margin-bottom: 8px; color: #1E293B; }
+    h2 { font-size: 17px; font-weight: 700; margin-top: 28px; margin-bottom: 8px; color: #1E293B; }
+    p, li { font-size: 14px; margin-bottom: 8px; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    .date { font-size: 13px; color: #94A3B8; margin-bottom: 24px; }
+    .contact { background: #EBF5FF; border-radius: 8px; padding: 16px; margin-top: 16px; }
+    .contact p { margin-bottom: 4px; }
+  </style>
+</head>
+<body>
+  <h1>プライバシーポリシー</h1>
+  <p class="date">制定日: 2026年3月3日</p>
+
+  <p>花粉アラート（以下「本アプリ」）は、ユーザーのプライバシーを尊重し、個人情報の保護に努めます。本プライバシーポリシーでは、本アプリが取り扱うデータについて説明します。</p>
+
+  <h2>1. 収集するデータ</h2>
+  <h3 style="font-size:15px; margin-top:12px; margin-bottom:6px;">位置情報</h3>
+  <p>本アプリは、花粉予報データを取得するためにユーザーの現在地（緯度・経度）を使用します。</p>
+  <ul>
+    <li>位置情報は花粉データの取得のみに使用されます</li>
+    <li>位置情報はサーバーに保存されません</li>
+    <li>位置情報は約0.1度（約11km）のグリッド単位に丸められた上で花粉データの問い合わせに使用されます</li>
+  </ul>
+
+  <h3 style="font-size:15px; margin-top:12px; margin-bottom:6px;">端末内データ</h3>
+  <p>本アプリは以下のデータを端末内（MMKV ストレージ）にのみ保存します。</p>
+  <ul>
+    <li>通知設定（通知の有無、通知時間、アラート基準レベル）</li>
+    <li>花粉予報のキャッシュデータ</li>
+  </ul>
+  <p>これらのデータは外部に送信されません。</p>
+
+  <h2>2. 利用する外部サービス</h2>
+  <p>本アプリは以下の外部サービスを利用しています。各サービスのプライバシーポリシーもご確認ください。</p>
+  <ul>
+    <li><strong>Google Pollen API</strong> — 花粉予報データの取得に使用します。グリッド座標（緯度・経度）を送信します。</li>
+    <li><strong>Supabase</strong> — 花粉データのキャッシュサーバーとして使用します。個人を特定する情報は保存しません。</li>
+    <li><strong>Google AdMob</strong> — 広告の表示に使用します。AdMob は端末の広告識別子を使用する場合があります。詳細は <a href="https://policies.google.com/privacy" target="_blank">Google のプライバシーポリシー</a>をご確認ください。</li>
+  </ul>
+
+  <h2>3. サーバーに保存するデータ</h2>
+  <p>サーバー（Supabase）には、花粉予報のキャッシュデータのみが保存されます。</p>
+  <ul>
+    <li>グリッド座標（0.1度単位に丸められた緯度・経度）</li>
+    <li>花粉予報データ</li>
+    <li>キャッシュの有効期限（24時間）</li>
+  </ul>
+  <p>個人を特定する情報や端末情報はサーバーに保存されません。</p>
+
+  <h2>4. データの第三者提供</h2>
+  <p>本アプリは、上記外部サービスの利用を除き、ユーザーのデータを第三者に提供・販売することはありません。</p>
+
+  <h2>5. お子様のプライバシー</h2>
+  <p>本アプリは13歳未満のお子様を対象としていません。13歳未満のお子様から故意に個人情報を収集することはありません。</p>
+
+  <h2>6. プライバシーポリシーの変更</h2>
+  <p>本プライバシーポリシーは、必要に応じて改定することがあります。重要な変更がある場合は、アプリ内で通知します。</p>
+
+  <h2>7. お問い合わせ</h2>
+  <div class="contact">
+    <p>本プライバシーポリシーに関するお問い合わせは、以下までご連絡ください。</p>
+    <p><strong>メールアドレス:</strong> kahun.alert.app@gmail.com</p>
+  </div>
+</body>
+</html>
